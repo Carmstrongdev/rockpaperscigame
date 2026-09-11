@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <header>
+            <p class="terminal-label">PYTHON GAME LAB // GAME 001</p>
+            <h1>ROCK PAPER SCISSORS</h1>
+            <p class="subtitle">Choose your weapon.</p>
+        </header>
+
+        <section class="scoreboard">
+            <div class="score-box">
+                <span>PLAYER</span>
+                <strong id="player-score">0</strong>
+            </div>
+            <div class="score-box">
+                <span>COMPUTER</span>
+                <strong id="computer-score">0</strong>
+            </div>
+            <div class="score-box">
+                <span>TIES</span>
+                <strong id="tie-score">0</strong>
+            </div>
+        </section>
+
+        <section class="battle">
+            <div class="fighter">
+                <p>YOU</p>
+                <div id="player-choice" class="choice-display">?</div>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="fighter">
+                <p>COMPUTER</p>
+                <div id="computer-choice" class="choice-display">?</div>
+            </div>
+        </section>
+
+        <section class="result-section">
+            <p id="result" aria-live="polite">Make your choice.</p>
+        </section>
+
+        <section class="choices">
+            <button class="choice-button" data-choice="rock" type="button">
+                <span class="emoji">🪨</span>
+                <span>ROCK</span>
+            </button>
+
+            <button class="choice-button" data-choice="paper" type="button">
+                <span class="emoji">📄</span>
+                <span>PAPER</span>
+            </button>
+
+            <button class="choice-button" data-choice="scissors" type="button">
+                <span class="emoji">✂️</span>
+                <span>SCISSORS</span>
+            </button>
+        </section>
+
+        <button id="reset-button" class="reset-button" type="button">
+            RESET GAME
+        </button>
+
+        <footer>
+            <p>GAME STATUS: <span id="status">READY</span></p>
+        </footer>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
